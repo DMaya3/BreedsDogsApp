@@ -17,6 +17,7 @@
 		B8CA22852DA9874F00951B86 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA22842DA9874F00951B86 /* APICall.swift */; };
 		B8CA22882DA9877400951B86 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA22872DA9877400951B86 /* APIError.swift */; };
 		B8CA228A2DA9879800951B86 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA22892DA9879800951B86 /* NetworkingHelpers.swift */; };
+		B8CA228C2DA98A9C00951B86 /* BreedsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA228B2DA98A9600951B86 /* BreedsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B8CA22842DA9874F00951B86 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		B8CA22872DA9877400951B86 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		B8CA22892DA9879800951B86 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
+		B8CA228B2DA98A9600951B86 /* BreedsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		B8CA22762DA9833500951B86 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				B8CA228B2DA98A9600951B86 /* BreedsUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CA228C2DA98A9C00951B86 /* BreedsUseCase.swift in Sources */,
 				B8CA22802DA9866A00951B86 /* WebRepository.swift in Sources */,
 				B8CA227E2DA9840C00951B86 /* BreedsDTO.swift in Sources */,
 				B8CA22852DA9874F00951B86 /* APICall.swift in Sources */,
