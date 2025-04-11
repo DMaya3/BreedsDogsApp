@@ -11,6 +11,7 @@
 		B8CA22722DA9832500951B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CA226D2DA9832500951B86 /* Assets.xcassets */; };
 		B8CA22732DA9832500951B86 /* BreedsDogsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */; };
 		B8CA22742DA9832500951B86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA226F2DA9832500951B86 /* ContentView.swift */; };
+		B8CA227E2DA9840C00951B86 /* BreedsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA227D2DA983FF00951B86 /* BreedsDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B8CA226D2DA9832500951B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsDogsAppApp.swift; sourceTree = "<group>"; };
 		B8CA226F2DA9832500951B86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B8CA227D2DA983FF00951B86 /* BreedsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		B8CA227A2DA9837000951B86 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				B8CA227D2DA983FF00951B86 /* BreedsDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CA227E2DA9840C00951B86 /* BreedsDTO.swift in Sources */,
 				B8CA22732DA9832500951B86 /* BreedsDogsAppApp.swift in Sources */,
 				B8CA22742DA9832500951B86 /* ContentView.swift in Sources */,
 			);
