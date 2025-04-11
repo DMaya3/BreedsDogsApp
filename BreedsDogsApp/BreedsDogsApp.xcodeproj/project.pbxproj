@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B8CA22712DA9832500951B86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CA226B2DA9832500951B86 /* Preview Assets.xcassets */; };
+		B8CA22722DA9832500951B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CA226D2DA9832500951B86 /* Assets.xcassets */; };
+		B8CA22732DA9832500951B86 /* BreedsDogsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */; };
+		B8CA22742DA9832500951B86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA226F2DA9832500951B86 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B8CA225A2DA9829500951B86 /* BreedsDogsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreedsDogsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8CA226B2DA9832500951B86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8CA226D2DA9832500951B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsDogsAppApp.swift; sourceTree = "<group>"; };
+		B8CA226F2DA9832500951B86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B8CA225C2DA9829500951B86 /* BreedsDogsApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BreedsDogsApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B8CA22572DA9829500951B86 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		B8CA22512DA9829500951B86 = {
 			isa = PBXGroup;
 			children = (
-				B8CA225C2DA9829500951B86 /* BreedsDogsApp */,
+				B8CA22702DA9832500951B86 /* BreedsDogsApp */,
 				B8CA225B2DA9829500951B86 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,65 @@
 				B8CA225A2DA9829500951B86 /* BreedsDogsApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B8CA226C2DA9832500951B86 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B8CA226B2DA9832500951B86 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8CA22702DA9832500951B86 /* BreedsDogsApp */ = {
+			isa = PBXGroup;
+			children = (
+				B8CA227A2DA9837000951B86 /* DTO */,
+				B8CA22792DA9835800951B86 /* Views */,
+				B8CA22772DA9833C00951B86 /* ViewModel */,
+				B8CA22762DA9833500951B86 /* UseCase */,
+				B8CA22752DA9832C00951B86 /* Repository */,
+				B8CA226C2DA9832500951B86 /* Preview Content */,
+				B8CA226D2DA9832500951B86 /* Assets.xcassets */,
+				B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */,
+				B8CA226F2DA9832500951B86 /* ContentView.swift */,
+			);
+			path = BreedsDogsApp;
+			sourceTree = "<group>";
+		};
+		B8CA22752DA9832C00951B86 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B8CA22762DA9833500951B86 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B8CA22772DA9833C00951B86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B8CA22792DA9835800951B86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8CA227A2DA9837000951B86 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +121,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B8CA225C2DA9829500951B86 /* BreedsDogsApp */,
 			);
 			name = BreedsDogsApp;
 			packageProductDependencies = (
@@ -109,6 +168,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CA22712DA9832500951B86 /* Preview Assets.xcassets in Resources */,
+				B8CA22722DA9832500951B86 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CA22732DA9832500951B86 /* BreedsDogsAppApp.swift in Sources */,
+				B8CA22742DA9832500951B86 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
