@@ -12,6 +12,11 @@
 		B8CA22732DA9832500951B86 /* BreedsDogsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */; };
 		B8CA22742DA9832500951B86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA226F2DA9832500951B86 /* ContentView.swift */; };
 		B8CA227E2DA9840C00951B86 /* BreedsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA227D2DA983FF00951B86 /* BreedsDTO.swift */; };
+		B8CA22802DA9866A00951B86 /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA227F2DA9866A00951B86 /* WebRepository.swift */; };
+		B8CA22822DA9867F00951B86 /* BreedsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA22812DA9867700951B86 /* BreedsRepository.swift */; };
+		B8CA22852DA9874F00951B86 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA22842DA9874F00951B86 /* APICall.swift */; };
+		B8CA22882DA9877400951B86 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA22872DA9877400951B86 /* APIError.swift */; };
+		B8CA228A2DA9879800951B86 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA22892DA9879800951B86 /* NetworkingHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsDogsAppApp.swift; sourceTree = "<group>"; };
 		B8CA226F2DA9832500951B86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8CA227D2DA983FF00951B86 /* BreedsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsDTO.swift; sourceTree = "<group>"; };
+		B8CA227F2DA9866A00951B86 /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
+		B8CA22812DA9867700951B86 /* BreedsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRepository.swift; sourceTree = "<group>"; };
+		B8CA22842DA9874F00951B86 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		B8CA22872DA9877400951B86 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		B8CA22892DA9879800951B86 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +71,13 @@
 		B8CA22702DA9832500951B86 /* BreedsDogsApp */ = {
 			isa = PBXGroup;
 			children = (
+				B8CA22862DA9876B00951B86 /* Utils */,
+				B8CA22832DA9873E00951B86 /* APIClient */,
 				B8CA227A2DA9837000951B86 /* DTO */,
 				B8CA22792DA9835800951B86 /* Views */,
 				B8CA22772DA9833C00951B86 /* ViewModel */,
 				B8CA22762DA9833500951B86 /* UseCase */,
-				B8CA22752DA9832C00951B86 /* Repository */,
+				B8CA22752DA9832C00951B86 /* Repositories */,
 				B8CA226C2DA9832500951B86 /* Preview Content */,
 				B8CA226D2DA9832500951B86 /* Assets.xcassets */,
 				B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */,
@@ -74,11 +86,13 @@
 			path = BreedsDogsApp;
 			sourceTree = "<group>";
 		};
-		B8CA22752DA9832C00951B86 /* Repository */ = {
+		B8CA22752DA9832C00951B86 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				B8CA22812DA9867700951B86 /* BreedsRepository.swift */,
+				B8CA227F2DA9866A00951B86 /* WebRepository.swift */,
 			);
-			path = Repository;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		B8CA22762DA9833500951B86 /* UseCase */ = {
@@ -108,6 +122,23 @@
 				B8CA227D2DA983FF00951B86 /* BreedsDTO.swift */,
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		B8CA22832DA9873E00951B86 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				B8CA22842DA9874F00951B86 /* APICall.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		B8CA22862DA9876B00951B86 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B8CA22892DA9879800951B86 /* NetworkingHelpers.swift */,
+				B8CA22872DA9877400951B86 /* APIError.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,9 +214,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CA22802DA9866A00951B86 /* WebRepository.swift in Sources */,
 				B8CA227E2DA9840C00951B86 /* BreedsDTO.swift in Sources */,
+				B8CA22852DA9874F00951B86 /* APICall.swift in Sources */,
+				B8CA22822DA9867F00951B86 /* BreedsRepository.swift in Sources */,
 				B8CA22732DA9832500951B86 /* BreedsDogsAppApp.swift in Sources */,
+				B8CA228A2DA9879800951B86 /* NetworkingHelpers.swift in Sources */,
 				B8CA22742DA9832500951B86 /* ContentView.swift in Sources */,
+				B8CA22882DA9877400951B86 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
