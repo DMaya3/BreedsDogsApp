@@ -10,6 +10,7 @@ import Combine
 
 protocol BreedsRepository: WebRepository {
     func fetchAllBreedsDataService() async -> AnyPublisher<BreedsDTO, Error>
+    func fetchBreedImageDataService(breedName: String) async -> AnyPublisher<BreedImage, Error>
 }
 
 struct BreedsDataRepository: BreedsRepository {
@@ -20,11 +21,16 @@ struct BreedsDataRepository: BreedsRepository {
     func fetchAllBreedsDataService() async -> AnyPublisher<BreedsDTO, any Error> {
         return call(endpoint: API.allBreeds)
     }
+    
+    func fetchBreedImageDataService(breedName: String) async -> AnyPublisher<BreedImage, any Error> {
+        return call(endpoint: API.breedImage(breedName: breedName))
+    }
 }
 
 extension BreedsDataRepository {
     enum API {
         case allBreeds
+        case breedImage(breedName: String)
     }
 }
 
@@ -33,12 +39,14 @@ extension BreedsDataRepository.API: APICall {
         switch self {
         case .allBreeds:
             return "breeds/list/all"
+        case .breedImage(let breedName):
+            return "breed/\(breedName)/images"
         }
     }
     
     var method: String {
         switch self {
-        case .allBreeds:
+        case .allBreeds, .breedImage:
             return "GET"
         }
     }

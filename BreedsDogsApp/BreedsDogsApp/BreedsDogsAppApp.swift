@@ -11,7 +11,10 @@ import SwiftUI
 struct BreedsDogsAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                BreedsListView()
+                    .environmentObject(BreedsViewModel())
+            }
         }
     }
 }

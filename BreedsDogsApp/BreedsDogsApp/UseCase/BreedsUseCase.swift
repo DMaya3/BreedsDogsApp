@@ -10,6 +10,7 @@ import Combine
 
 protocol BreedsUseCase {
     func fetchDataBreeds() async -> AnyPublisher<BreedsDTO, Error>
+    func fetchDataImageBreed(breedName: String) async -> AnyPublisher<BreedImage, Error>
 }
 
 struct DefaultBreedsUseCase: BreedsUseCase {
@@ -18,4 +19,9 @@ struct DefaultBreedsUseCase: BreedsUseCase {
     func fetchDataBreeds() async -> AnyPublisher<BreedsDTO, Error> {
         return await repository.fetchAllBreedsDataService()
     }
+    
+    func fetchDataImageBreed(breedName: String) async -> AnyPublisher<BreedImage, any Error> {
+        return await repository.fetchBreedImageDataService(breedName: breedName)
+    }
+    
 }

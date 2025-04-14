@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B813A7DC2DAD22CD006C8739 /* BreedViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B813A7DB2DAD22C7006C8739 /* BreedViewDetail.swift */; };
 		B8CA22712DA9832500951B86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CA226B2DA9832500951B86 /* Preview Assets.xcassets */; };
 		B8CA22722DA9832500951B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CA226D2DA9832500951B86 /* Assets.xcassets */; };
 		B8CA22732DA9832500951B86 /* BreedsDogsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */; };
-		B8CA22742DA9832500951B86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA226F2DA9832500951B86 /* ContentView.swift */; };
 		B8CA227E2DA9840C00951B86 /* BreedsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA227D2DA983FF00951B86 /* BreedsDTO.swift */; };
 		B8CA22802DA9866A00951B86 /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA227F2DA9866A00951B86 /* WebRepository.swift */; };
 		B8CA22822DA9867F00951B86 /* BreedsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA22812DA9867700951B86 /* BreedsRepository.swift */; };
@@ -19,14 +19,15 @@
 		B8CA228A2DA9879800951B86 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA22892DA9879800951B86 /* NetworkingHelpers.swift */; };
 		B8CA228C2DA98A9C00951B86 /* BreedsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA228B2DA98A9600951B86 /* BreedsUseCase.swift */; };
 		B8CA228E2DA98C4300951B86 /* BreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA228D2DA98C3E00951B86 /* BreedsViewModel.swift */; };
+		B8CA22902DA98F4500951B86 /* BreedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA228F2DA98F4000951B86 /* BreedsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B813A7DB2DAD22C7006C8739 /* BreedViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewDetail.swift; sourceTree = "<group>"; };
 		B8CA225A2DA9829500951B86 /* BreedsDogsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreedsDogsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CA226B2DA9832500951B86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B8CA226D2DA9832500951B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsDogsAppApp.swift; sourceTree = "<group>"; };
-		B8CA226F2DA9832500951B86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8CA227D2DA983FF00951B86 /* BreedsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsDTO.swift; sourceTree = "<group>"; };
 		B8CA227F2DA9866A00951B86 /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
 		B8CA22812DA9867700951B86 /* BreedsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRepository.swift; sourceTree = "<group>"; };
@@ -35,6 +36,7 @@
 		B8CA22892DA9879800951B86 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
 		B8CA228B2DA98A9600951B86 /* BreedsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsUseCase.swift; sourceTree = "<group>"; };
 		B8CA228D2DA98C3E00951B86 /* BreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewModel.swift; sourceTree = "<group>"; };
+		B8CA228F2DA98F4000951B86 /* BreedsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,6 @@
 				B8CA226C2DA9832500951B86 /* Preview Content */,
 				B8CA226D2DA9832500951B86 /* Assets.xcassets */,
 				B8CA226E2DA9832500951B86 /* BreedsDogsAppApp.swift */,
-				B8CA226F2DA9832500951B86 /* ContentView.swift */,
 			);
 			path = BreedsDogsApp;
 			sourceTree = "<group>";
@@ -118,6 +119,8 @@
 		B8CA22792DA9835800951B86 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B813A7DB2DAD22C7006C8739 /* BreedViewDetail.swift */,
+				B8CA228F2DA98F4000951B86 /* BreedsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,15 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CA22902DA98F4500951B86 /* BreedsListView.swift in Sources */,
 				B8CA228C2DA98A9C00951B86 /* BreedsUseCase.swift in Sources */,
 				B8CA228E2DA98C4300951B86 /* BreedsViewModel.swift in Sources */,
 				B8CA22802DA9866A00951B86 /* WebRepository.swift in Sources */,
+				B813A7DC2DAD22CD006C8739 /* BreedViewDetail.swift in Sources */,
 				B8CA227E2DA9840C00951B86 /* BreedsDTO.swift in Sources */,
 				B8CA22852DA9874F00951B86 /* APICall.swift in Sources */,
 				B8CA22822DA9867F00951B86 /* BreedsRepository.swift in Sources */,
 				B8CA22732DA9832500951B86 /* BreedsDogsAppApp.swift in Sources */,
 				B8CA228A2DA9879800951B86 /* NetworkingHelpers.swift in Sources */,
-				B8CA22742DA9832500951B86 /* ContentView.swift in Sources */,
 				B8CA22882DA9877400951B86 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
