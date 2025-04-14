@@ -12,6 +12,11 @@ final class BreedsViewModel: ObservableObject {
     private var suscription = Set<AnyCancellable>()
     var isLoading: Bool = false
     @Published var breeds: BreedsDTO?
+    @Published var breedImageUrl: URL?
+    
+    var breedsArray: [Breed] {
+        breeds?.message.map { Breed(main: $0.key, subBreeds: $0.value) } ?? []
+    }
     
     init() {
         Task {
@@ -22,17 +27,21 @@ final class BreedsViewModel: ObservableObject {
     func fetchBreeds() async {
         await self.suscribeBreeds()
     }
+    
+    func fetchBreedImage(breedName: String) async {
+        await self.suscribeBreedImage(breedName: breedName)
+    }
 }
 
 // MARK: - Fetch Data
 extension BreedsViewModel {
-    func breendsPublisher() async  -> AnyPublisher<BreedsDTO, Error> {
+    func breedsPublisher() async  -> AnyPublisher<BreedsDTO, Error> {
         self.isLoading = true
         return await self.useCase.fetchDataBreeds()
     }
     
     func suscribeBreeds() async {
-        await self.breendsPublisher()
+        await self.breedsPublisher()
             .sink { [weak self] completion in
                 self?.isLoading = false
                 self?.handleCompletion(completion)
@@ -41,6 +50,26 @@ extension BreedsViewModel {
                 self?.breeds = breeds
             }
             .store(in: &suscription)
+    }
+    
+    func breedImagePublisher(breedName: String) async -> AnyPublisher<BreedImage, Error> {
+        self.isLoading = true
+        return await self.useCase.fetchDataImageBreed(breedName: breedName)
+    }
+    
+    func suscribeBreedImage(breedName: String) async {
+        await self.breedImagePublisher(breedName: breedName)
+            .sink { [weak self] completion in
+                self?.isLoading = false
+                self?.handleCompletion(completion)
+            } receiveValue: { [weak self] breedImage in
+                self?.isLoading = false
+                if let firstImageURL = breedImage.message.first {
+                    self?.breedImageUrl = URL(string: firstImageURL)
+                }
+            }
+            .store(in: &suscription)
+
     }
 }
 
